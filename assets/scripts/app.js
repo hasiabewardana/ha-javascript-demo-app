@@ -134,3 +134,18 @@ class User{
 const userObject = new User('Riky', 'Ponting');
 userObject.getInfo();
 // ### Objects & classes - end ###
+
+// ### Arrays - start ###
+const hobbies = ['Gardening', 'Cycling', 'Painting', 'Jogging'];
+
+console.log(hobbies);
+console.log(hobbies[0]);
+
+// Find the index of an element
+const index = hobbies.findIndex(item => item === 'Cycling');
+console.log(index);
+
+// Map to a new array
+const editedHobbies = hobbies.map(item => ({text: item + '!'}));
+console.log(editedHobbies);
+// ### Arrays - end ###
