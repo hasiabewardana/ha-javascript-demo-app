@@ -76,3 +76,29 @@ greetUser3('David');
 const greeting = greetUser4('Anne', 'Good Night!');
 console.log(greeting);
 // ### Functions - end ###
+
+// ## Arrow function - start ###
+// With no parameter and not returning a value
+() => {
+    console.log('With no parameter and not returning a value');
+}
+
+// With no parameter and returning a value
+() => 'With no parameter and returning a value';
+
+// With one parameter and not returning a value
+age => {
+    console.log(age);
+}
+
+// With one parameter and returning a value
+age => age;
+
+// With multiple parameters and not returning a value
+(user, greetMessage) => {
+    console.log(greetMessage + ' ' + user);
+}
+
+// With multiple parameters and returning a value
+(user, greetMessage) => greetMessage + ' ' + user;
+// ## Arrow function - end ###
