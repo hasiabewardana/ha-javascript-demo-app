@@ -47,3 +47,26 @@ console.log(10 < 5);
 console.log(10 >= 5);
 console.log(10 <= 5);
 // ### Operators - end ###
+
+// ### Functions - start ###
+// Functions without parameter list
+function greetUser(){
+    console.log('Good Morning! ' + 'John');
+}
+
+// Functions with parameter list
+function greetUser2(user, greetMessage){
+    console.log(greetMessage + ' ' + user);
+}
+
+// Function with return value
+function greetUser3(user, greetMessage){
+    return greetMessage + ' ' + user;
+}
+
+// Function calls
+greetUser();
+greetUser2('Peter', 'Good Afternoon!');
+const greeting = greetUser3('Anne', 'Good Night!');
+console.log(greeting);
+// ### Functions - end ###
