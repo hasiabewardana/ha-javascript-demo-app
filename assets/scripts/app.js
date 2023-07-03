@@ -229,3 +229,8 @@ for(const country of counties){
     console.log(country);
 }
 // ### For loop - end ###
+
+// ### Modify the DOM - start ###
+const list = document.querySelector('ul');
+list.remove();
+// ### Modify the DOM - start ###
