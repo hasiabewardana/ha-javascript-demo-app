@@ -189,3 +189,23 @@ const {name: name3, age: age4} = {
 console.log(name3);
 console.log(age4);
 // ### Destructuring - end ###
+
+// ### Spread operator - start ###
+// Array
+const newHobbies = ['Dancing'];
+const allHobbies = [...hobbies, ...newHobbies]
+
+console.log(allHobbies);
+
+// Object
+const roleObject = {
+    isAdmin: true
+}
+
+const newUserObject = {
+    ...userObject2,
+    ...roleObject
+}
+
+console.log(newUserObject);
+// ### Spread operator - end ###
