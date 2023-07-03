@@ -77,7 +77,7 @@ const greeting = greetUser4('Anne', 'Good Night!');
 console.log(greeting);
 // ### Functions - end ###
 
-// ## Arrow function - start ###
+// ### Arrow function - start ###
 // With no parameter and not returning a value
 () => {
     console.log('With no parameter and not returning a value');
@@ -101,4 +101,36 @@ age => age;
 
 // With multiple parameters and returning a value
 (user, greetMessage) => greetMessage + ' ' + user;
-// ## Arrow function - end ###
+// ### Arrow function - end ###
+
+// ### Objects & classes - start ###
+// Object
+const user = {
+    name: 'James',
+    age: 40,
+    getInfo(){
+        console.log('name = ' + this.name + ' and age = ' + this.age);
+    }
+}
+
+console.log(user);
+console.log(user.name);
+console.log(user.age);
+user.getInfo();
+
+// Class
+class User{
+    constructor(firstName, lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getInfo(){
+        console.log('First Name = ' + this.firstName + ' and Last Name = ' + this.lastName);
+    }
+}
+
+// Object creation from a class
+const userObject = new User('Riky', 'Ponting');
+userObject.getInfo();
+// ### Objects & classes - end ###
