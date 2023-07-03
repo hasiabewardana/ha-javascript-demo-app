@@ -59,14 +59,20 @@ function greetUser2(user, greetMessage){
     console.log(greetMessage + ' ' + user);
 }
 
+// Functions with default parameter values
+function greetUser3(user, greetMessage = 'Good Day!'){
+    console.log(greetMessage + ' ' + user);
+}
+
 // Function with return value
-function greetUser3(user, greetMessage){
+function greetUser4(user, greetMessage){
     return greetMessage + ' ' + user;
 }
 
 // Function calls
 greetUser();
 greetUser2('Peter', 'Good Afternoon!');
-const greeting = greetUser3('Anne', 'Good Night!');
+greetUser3('David');
+const greeting = greetUser4('Anne', 'Good Night!');
 console.log(greeting);
 // ### Functions - end ###
