@@ -251,3 +251,15 @@ function greet(greetFunc){
 
 greet(() => {console.log('Welcome buddy!')});
 // ### Functions as values - end ###
+
+// ### Functions inside of functions - start ###
+function init(){
+    function greet(){
+        console.log('Happy new year!');
+    }
+
+    greet();
+}
+
+init();
+// ### Functions inside of functions - start ###
