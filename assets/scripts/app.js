@@ -149,3 +149,43 @@ console.log(index);
 const editedHobbies = hobbies.map(item => ({text: item + '!'}));
 console.log(editedHobbies);
 // ### Arrays - end ###
+
+// ### Destructuring - start ###
+const userData = ['Kane', 35];
+
+// Without destructuring
+// Array
+const userName = userData[0];
+const age = userData[1];
+
+console.log(userName);
+console.log(age);
+
+// Object
+const userObject2 = {
+    name: 'Jackson',
+    age: 55
+}
+
+const name2 = userObject2.name; 
+const age3 = userObject2.age;
+
+console.log(name2);
+console.log(age3);
+
+// With destucturing
+// Array
+const [userName2, age2] = ['Kane', 35];
+
+console.log(userName2);
+console.log(age2);
+
+// Object
+const {name: name3, age: age4} = {
+    name: 'Jackson',
+    age: 55
+}
+
+console.log(name3);
+console.log(age4);
+// ### Destructuring - end ###
