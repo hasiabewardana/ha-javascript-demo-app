@@ -234,3 +234,20 @@ for(const country of counties){
 const list = document.querySelector('ul');
 list.remove();
 // ### Modify the DOM - start ###
+
+// ### Functions as values - start ###
+// For built-in functions
+function handleTimeout(){
+    console.log('Timed out!');
+}
+
+setTimeout(handleTimeout, 2000);
+setTimeout(() => {console.log('Timed out again!')}, 3000);
+
+// For custom functions
+function greet(greetFunc){
+    greetFunc();
+}
+
+greet(() => {console.log('Welcome buddy!')});
+// ### Functions as values - end ###
