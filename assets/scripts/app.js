@@ -209,3 +209,23 @@ const newUserObject = {
 
 console.log(newUserObject);
 // ### Spread operator - end ###
+
+// ### If statement - start ###
+const password = prompt('Enter your password!');
+
+if (password === 'Hello'){
+    console.log(password + ' works');
+}else if (password === 'hello'){
+    console.log(password + ' works');
+}else{
+    console.log(password + " doesn't work");
+}
+// ### If statement - end ###
+
+// ### For loop - start ###
+const counties = ['India', 'Canada', 'Japan'];
+
+for(const country of counties){
+    console.log(country);
+}
+// ### For loop - end ###
