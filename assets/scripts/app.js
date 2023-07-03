@@ -263,3 +263,17 @@ function init(){
 
 init();
 // ### Functions inside of functions - start ###
+
+// ### Primitive vs reference types - start ###
+// Primitive types
+const department = 'Marketing';
+
+console.log(department.concat(' Department'));
+console.log(department);
+
+// Reference types
+const vehicle = ['van', 'car', 'bus'];
+vehicle.push('plan');
+
+console.log(vehicle);
+// ### Primitive vs reference types - end ###
